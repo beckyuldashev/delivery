@@ -58,4 +58,19 @@
   top: calc(var(--header-height) + 1rem);
 }
 
+.active-link {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    bottom: -.75rem;
+    width: 5px;
+    height: 5px;
+    background-color: var(--title-color);
+    border-radius: 50%;
+  }
+}
+
 // ============== Change background header ===============
